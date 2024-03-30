@@ -21,9 +21,9 @@ export default function Home() {
           </div>
 
           <ul className="flex items-center">
-            <li className="text-xl cursor-pointer">
+            {/* <li className="text-xl cursor-pointer">
               <BsFillMoonStarsFill />
-            </li>
+            </li> */}
             <li>
               <a
                 className="ml-8 text-xl text-black roboto font-medium rounded-full m-2 hover:text-blue-500 transition duration-200"
