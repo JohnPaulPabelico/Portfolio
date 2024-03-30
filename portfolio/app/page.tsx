@@ -4,12 +4,16 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
+import { FaViber } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { RiDiscordLine } from "react-icons/ri";
+import React from "react";
 
 export default function Home() {
   return (
     <main>
       {/* ------- NAVIGATON BAR ------- */}
-      <nav className="fixed w-full shadow px-3 py-2 flex justify-between bg-white z-10">
+      <nav className="fixed w-full shadow px-5 min-h-[80px] flex justify-between bg-white z-10">
         <div>
           {" "}
           <Image
@@ -85,15 +89,17 @@ export default function Home() {
                 className="ml-3 hidden lg:block "
               />
             </div>
-            <h2 className="lg:text-start text-center mt-1 tracking-wide text-2xl font-bold titillium text-gray-700">
+            <h2 className="lg:text-start text-center mt-1 tracking-widest text-2xl font-bold titillium text-gray-700">
               Web Developer
             </h2>
-            <h1 className="lg:text-start  text-center mt-3 text-light roboto text-gray-700">
-              Hey there, I'm John Paul Pabelico, your go-to guru for all things
-              Front-end <br></br>and React! Hailing from the lively streets of
-              the Philippines, I bring not just <br></br>expertise, but a
-              genuine passion for crafting captivating digital experiences.
-            </h1>
+            <div className="max-w-lg ">
+              <h1 className="lg:text-start text-center mt-3 text-light roboto text-gray-700">
+                Hey there, I&apos;m John Paul Pabelico, your go-to guru for all
+                things Front-end and React! Hailing from the lively streets of
+                the Philippines, I bring not just expertise, but a genuine
+                passion for crafting captivating digital experiences.
+              </h1>
+            </div>
             <span className="flex justify-center lg:justify-start text-4xl mt-8">
               <a
                 href="https://github.com/JohnPaulPabelico"
@@ -162,46 +168,46 @@ export default function Home() {
           <span className="text-center lg:text-start lg:flex items-center text-2xl titillium font-bold text-gray-500">
             Tech Stack: &nbsp;{" "}
             <ul className="lg:flex lg:items-center lg:mt-0 mt-5 grid grid-cols-4 gap-4">
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 <img src="https://skillicons.dev/icons?i=html" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 <img src="https://skillicons.dev/icons?i=css" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
                 <img src="https://skillicons.dev/icons?i=js" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
                 <img src="https://skillicons.dev/icons?i=ts" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
                 <img src="https://skillicons.dev/icons?i=react" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 <img src="https://skillicons.dev/icons?i=next" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 <img src="https://skillicons.dev/icons?i=expressjs" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 <img src="https://skillicons.dev/icons?i=nodejs" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
                 <img src="https://skillicons.dev/icons?i=tailwind" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
                 <img src="https://skillicons.dev/icons?i=github" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
                 <img src="https://skillicons.dev/icons?i=npm" />
               </li>
-              <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
+              <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
                 <img src="https://skillicons.dev/icons?i=docker" />
               </li>
@@ -210,16 +216,68 @@ export default function Home() {
         </div>
       </section>
       <section id="projects" className="min-h-screen bg-gray-100">
-        Projects
-      </section>
-      <section id="contact" className="min-h-96 bg-white">
-        <div className="py-3"></div>
+        <div className="py-16"></div>
         <div className="text-6xl font-bold titillium flex justify-center">
-          CONTACT ME
+          PROJECTS
+        </div>
+      </section>
+      <section id="contact" className="lg:min-h-80 min-h-96 bg-white">
+        <div className="py-6"></div>
+        <div className="flex justify-center">
+          <h1 className="text-6xl font-bold titillium ">CONTACT ME</h1>
+        </div>
+        <div className="flex justify-center">
+          {" "}
+          <h2 className="text-lg tracking-widest font-bold titillium ">
+            AND LET&apos;S GET TO WORK
+          </h2>
+        </div>
+        <div className="mt-10 grid lg:grid-cols-3 grid-cols-1 gap-4 justify-items-center">
+          <div>
+            {" "}
+            <div className="flex justify-center items-center py-2 px-4 titillium font-bold text-2xl">
+              <FaViber />
+              <span className="ml-2">Phone/Viber</span>
+            </div>
+            <div>
+              {" "}
+              <span className="flex justify-center px-4 titillium font-bold text-xl text-black text-opacity-60">
+                +63 9959 279 891
+              </span>
+            </div>
+          </div>
+
+          <div className="">
+            {" "}
+            <div className="flex justify-center items-center py-2 px-4 titillium font-bold text-2xl">
+              <MdOutlineEmail />
+              <span className="ml-2">Email</span>
+            </div>
+            <div>
+              {" "}
+              <span className="flex justify-center px-4 titillium font-bold text-xl text-black text-opacity-60">
+                pabelicojohnpaul@gmail.com
+              </span>
+            </div>
+          </div>
+
+          <div>
+            {" "}
+            <div className="flex justify-center items-center py-2 px-4 titillium font-bold text-2xl">
+              <RiDiscordLine />
+              <span className="ml-2 ">Discord</span>
+            </div>
+            <div>
+              {" "}
+              <span className="lg:mb-0 mb-10 flex justify-center px-4 titillium font-bold text-xl text-black text-opacity-60">
+                sen.gg
+              </span>
+            </div>
+          </div>
         </div>
       </section>
       <section
-        id="projects"
+        id="footer"
         className="min-h-32 bg-gray-900 flex justify-between items-center px-10"
       >
         <div className="text-2xl text-white font-bold titillium ">
