@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       {/* ------- NAVIGATON BAR ------- */}
-      <nav className="fixed w-full shadow px-5 min-h-[80px] flex justify-between bg-white z-10">
+      <nav className="lg:fixed absolute w-full shadow px-5 flex justify-between bg-white z-10">
         <div>
           {" "}
           <Image
@@ -66,7 +66,7 @@ export default function Home() {
 
       {/* ------- HOME SECTION ------- */}
 
-      <section id="home" className="bg-gray-100 min-h-screen">
+      <section id="home" className="bg-gray-100 min-h-dvh">
         <div className="lg:flex items-center justify-center lg:justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:px-10 py-5 w-3/4">
           <div className="mr-8 flex justify-center">
             <Image
@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="about" className="min-h-screen bg-white">
+      <section id="about" className="min-h-dvh bg-white">
         <div className="py-20"></div>
         <div className="text-6xl font-bold titillium flex justify-center">
           ABOUT ME
@@ -215,7 +215,7 @@ export default function Home() {
           </span>
         </div>
       </section>
-      <section id="projects" className="min-h-screen bg-gray-100">
+      <section id="projects" className="min-h-dvh bg-gray-100">
         <div className="py-16"></div>
         <div className="text-6xl font-bold titillium flex justify-center">
           PROJECTS
