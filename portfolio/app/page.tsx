@@ -3,90 +3,96 @@ import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
+import { IoIosContact } from "react-icons/io";
 
 export default function Home() {
   return (
     <main>
-      <section id="home" className="bg-gray-100 min-h-screen">
-        <nav className="fixed w-full shadow px-3 py-2 flex justify-between bg-white z-10">
-          <div>
-            {" "}
-            <Image
-              src="/Jp Black.png"
-              alt="Icon"
-              width={80}
-              height={80}
-              className="rounded-full"
-            />
-          </div>
+      {/* ------- NAVIGATON BAR ------- */}
+      <nav className="fixed w-full shadow px-3 py-2 flex justify-between bg-white z-10">
+        <div>
+          {" "}
+          <Image
+            src="/Jp Black.png"
+            alt="Icon"
+            width={80}
+            height={80}
+            className="rounded-full"
+          />
+        </div>
 
-          <ul className="flex items-center">
-            {/* <li className="text-xl cursor-pointer">
+        <ul className="flex items-center">
+          {/* <li className="text-xl cursor-pointer">
               <BsFillMoonStarsFill />
             </li> */}
-            <li>
-              <a
-                className="ml-8 text-xl text-black roboto font-medium rounded-full m-2 hover:text-blue-500 transition duration-200"
-                href="#home"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                className="text-xl text-black roboto font-medium rounded-full m-2 hover:text-blue-500 transition duration-200"
-                href="#about"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                className="text-xl text-black roboto font-medium rounded-full m-2 hover:text-blue-500 transition duration-200"
-                href="#projects"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                className="text-xl text-black roboto font-medium rounded-full m-2 hover:text-blue-500 transition duration-200"
-                href="#contact"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <li>
+            <a
+              className="ml-8 text-xl text-black titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200"
+              href="#home"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-xl text-black titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200"
+              href="#about"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-xl text-black titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200"
+              href="#projects"
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-xl text-black titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200"
+              href="#contact"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-        <div className="lg:flex items-center justify-center lg:justify-start absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:px-20 py-5">
-          <div className="mr-8">
+      {/* ------- HOME SECTION ------- */}
+
+      <section id="home" className="bg-gray-100 min-h-screen">
+        <div className="lg:flex items-center justify-center lg:justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:px-10 py-5 w-3/4">
+          <div className="mr-8 flex justify-center">
             <Image
               src="/Jp.jpg"
               alt="Profile Pic"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className="rounded-full ml-3 mb-5 lg:mb-0 lg:mt-3 lg:ml-0"
             />
           </div>
 
           <div>
-            <div className="text-center lg:text-start text-4xl font-bold roboto lg:flex">
-              JP Pabelico{" "}
+            <div className="text-center lg:text-start lg:text-7xl text-5xl font-bold titillium flex lg:justify-start justify-center tracking-widest items-center">
+              JP PABELICO{" "}
               <Image
                 src="/waving.png"
                 alt="waving_hand"
-                width={50}
-                height={50}
-                className="ml-3 hidden lg:block"
+                width={60}
+                height={60}
+                className="ml-3 hidden lg:block "
               />
             </div>
-            <h2 className="lg:text-start text-center mt-1 text-2xl font-medium roboto text-gray-700">
+            <h2 className="lg:text-start text-center mt-1 tracking-wide text-2xl font-bold titillium text-gray-700">
               Web Developer
             </h2>
-            <h1 className="lg:text-start text-center mt-3 text-light roboto text-gray-700">
-              Hi, I&apos;m John Paul Pabelico. A passionate Front-end React
-              Developer based in the Philippines.
+            <h1 className="lg:text-start  text-center mt-3 text-light roboto text-gray-700">
+              Hey there, I'm John Paul Pabelico, your go-to guru for all things
+              Front-end <br></br>and React! Hailing from the lively streets of
+              the Philippines, I bring not just <br></br>expertise, but a
+              genuine passion for crafting captivating digital experiences.
             </h1>
             <span className="flex justify-center lg:justify-start text-4xl mt-8">
               <a
@@ -105,13 +111,19 @@ export default function Home() {
               >
                 <FaLinkedin />
               </a>
+              <a
+                href="#contact"
+                className="hover:text-blue-500 transition duration-300 lg:ml-5 ml-3"
+              >
+                <IoIosContact />
+              </a>
             </span>
           </div>
         </div>
       </section>
       <section id="about" className="min-h-screen bg-white">
         <div className="py-20"></div>
-        <div className="text-4xl font-bold roboto flex justify-center">
+        <div className="text-6xl font-bold titillium flex justify-center">
           ABOUT ME
         </div>
         <div className="mt-10 flex justify-center">
@@ -147,7 +159,7 @@ export default function Home() {
           </h1>
         </div>
         <div className="py-20 lg:py-20 px-10 justify-center flex">
-          <span className="text-center lg:text-start lg:flex items-center text-xl roboto font-bold text-gray-500">
+          <span className="text-center lg:text-start lg:flex items-center text-2xl titillium font-bold text-gray-500">
             Tech Stack: &nbsp;{" "}
             <ul className="lg:flex lg:items-center lg:mt-0 mt-5 grid grid-cols-4 gap-4">
               <li className="m-2 hover:-translate-y-2 transition duration-300 ease-in-out">
@@ -200,8 +212,37 @@ export default function Home() {
       <section id="projects" className="min-h-screen bg-gray-100">
         Projects
       </section>
-      <section id="contact" className="min-h-screen bg-white">
-        Contact
+      <section id="contact" className="min-h-96 bg-white">
+        <div className="py-3"></div>
+        <div className="text-6xl font-bold titillium flex justify-center">
+          CONTACT ME
+        </div>
+      </section>
+      <section
+        id="projects"
+        className="min-h-32 bg-gray-900 flex justify-between items-center px-10"
+      >
+        <div className="text-2xl text-white font-bold titillium ">
+          Copyright © 2024. All rights are reserved
+        </div>
+        <div className="flex justify-center lg:justify-start text-4xl text-white">
+          <a
+            href="https://github.com/JohnPaulPabelico"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500 transition duration-300"
+          >
+            <IoLogoGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/john-paul-p-4640a6125/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500 transition duration-300 lg:ml-5 ml-3"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
       </section>
     </main>
   );
