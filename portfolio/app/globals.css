@@ -35,6 +35,10 @@ body {
   font-family: var(--font-roboto);
 }
 
+.titillium {
+  font-family: var(--font-titillium);
+}
+
 html {
   scroll-behavior: smooth;
 }
