@@ -85,8 +85,8 @@ export default function Home() {
               Web Developer
             </h2>
             <h1 className="lg:text-start text-center mt-3 text-light roboto text-gray-700">
-              Hi, I'm John Paul Pabelico. A passionate Front-end React Developer
-              based in the Philippines.
+              Hi, I&apos;m John Paul Pabelico. A passionate Front-end React
+              Developer based in the Philippines.
             </h1>
             <span className="flex justify-center lg:justify-start text-4xl mt-8">
               <a
@@ -115,33 +115,35 @@ export default function Home() {
           ABOUT ME
         </div>
         <div className="mt-10 flex justify-center">
-          <h1 className="text-justify lg:px-40 px-10 text-center text-light roboto font-bold text-gray-700 lg:w-1/2 ">
-            Hey there, I'm John Paul B. Pabelico, your next web sensation! From
-            the vibrant streets of Parañaque City, Philippines, I bring a burst
-            of creativity and expertise to the digital realm. With a Bachelor of
-            Science degree in Computer Engineering under my belt, I'm not just
-            another coder – I'm your partner in transforming visions into
-            captivating online experiences.
+          <h1 className="text-justify lg:px-40 px-10 text-light roboto font-bold text-gray-700 lg:w-1/2 ">
+            Hey there, I&apos;m John Paul B. Pabelico, your next web sensation!
+            From the vibrant streets of Parañaque City, Philippines, I bring a
+            burst of creativity and expertise to the digital realm. With a
+            Bachelor of Science degree in Computer Engineering under my belt,
+            I&apos;m not just another coder – I&apos;m your partner in
+            transforming visions into captivating online experiences.
             <br></br>
             <br></br>
             My journey in the tech world has been nothing short of exhilarating.
             From mastering the art of coding to honing my skills in web
-            development, I've dedicated myself to staying ahead of the curve.
-            Armed with a diverse toolkit that includes languages like Python,
-            JavaScript, and Java, as well as frameworks like NextJS and
-            ExpressJS, I'm equipped to tackle any challenge that comes my way.
+            development, I&apos;ve dedicated myself to staying ahead of the
+            curve. Armed with a diverse toolkit that includes languages like
+            Python, JavaScript, and Java, as well as frameworks like NextJS and
+            ExpressJS, I&apos;m equipped to tackle any challenge that comes my
+            way.
             <br></br>
             <br></br>
-            But it's not just about the code – it's about the magic that happens
-            when creativity meets technology. Whether it's designing sleek
-            interfaces that captivate audiences or crafting seamless user
-            experiences that keep them coming back for more, I thrive on pushing
-            the boundaries of what's possible in the digital world.
+            But it&apos;s not just about the code – it&apos;s about the magic
+            that happens when creativity meets technology. Whether it&apos;s
+            designing sleek interfaces that captivate audiences or crafting
+            seamless user experiences that keep them coming back for more, I
+            thrive on pushing the boundaries of what&apos;s possible in the
+            digital world.
             <br></br>
             <br></br>
-            So, if you're ready to take your online presence to the next level,
-            I'm here to make it happen. Let's team up and bring your wildest web
-            dreams to life!
+            So, if you&apos;re ready to take your online presence to the next
+            level, I&apos;m here to make it happen. Let&apos;s team up and bring
+            your wildest web dreams to life!
           </h1>
         </div>
         <div className="py-20 lg:py-20 px-10 justify-center flex">
