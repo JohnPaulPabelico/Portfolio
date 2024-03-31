@@ -1,17 +1,28 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
-
+import React, { useContext } from "react";
+import { DarkModeContext } from "../DarkModeContext";
 function Projects() {
+  const { darkMode } = useContext(DarkModeContext)!;
   return (
     <div>
-      <section id="projects" className="min-h-dvh bg-gray-100">
+      <section
+        id="projects"
+        className={`min-h-dvh ${
+          darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
+        }`}
+      >
         <div className="py-16"></div>
         <div className="text-6xl font-bold titillium flex justify-center">
           PROJECTS
         </div>
 
         <div className="mt-10 grid lg:grid-cols-3 grid-cols-1 gap-1 justify-items-center">
-          <div className="lg:ml-10 mx-10 my-5 lg:my-0 lg:mx-0 bg-white shadow-lg rounded-3xl">
+          <div
+            className={`lg:ml-10 mx-10 my-5 lg:my-0 lg:mx-0 shadow-lg rounded-3xl ${
+              darkMode ? "bg-gray-700 text-white" : "bg-white"
+            }`}
+          >
             {" "}
             <div className="p-10 ">
               <Image
@@ -34,7 +45,11 @@ function Projects() {
                 investor, collector, or simply curious about NFT ownership, this
                 tool provides an easy way to explore and track NFT holdings.
               </div>
-              <span className="mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold text-black">
+              <span
+                className={`mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold ${
+                  darkMode ? " text-white" : "text-black"
+                }`}
+              >
                 Tech Stack: &nbsp;{" "}
                 <ul className="flex lg:items-center lg:mt-0 mt-2 gap-4">
                   <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
@@ -123,7 +138,11 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="mx-10 my-5 lg:my-0 lg:mx-0 bg-white shadow-lg rounded-3xl">
+          <div
+            className={`mx-10 my-5 lg:my-0 lg:mx-0 shadow-lg rounded-3xl ${
+              darkMode ? "bg-gray-700 text-white" : "bg-white"
+            }`}
+          >
             {" "}
             <div className="p-10">
               <Image
@@ -146,7 +165,11 @@ function Projects() {
                 outlet in the digital space, our platform empowers you to mint
                 and distribute your unique Ebak-Coin tokens effortlessly.
               </div>
-              <span className="mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold text-black">
+              <span
+                className={`mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold ${
+                  darkMode ? " text-white" : "text-black"
+                }`}
+              >
                 Tech Stack: &nbsp;{" "}
                 <ul className="flex lg:items-center lg:mt-0 mt-2 gap-4">
                   <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
@@ -227,11 +250,15 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 bg-white shadow-lg rounded-3xl">
+          <div
+            className={`mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 bg-white shadow-lg rounded-3xl ${
+              darkMode ? "bg-gray-700 " : "bg-white"
+            }`}
+          >
             {" "}
             <div className="p-10">
               <Image
-                src="/projects/comingsoon.png"
+                src="/projects/comingsoon.jpg"
                 alt="Icon"
                 width={500}
                 height={500}

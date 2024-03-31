@@ -1,16 +1,31 @@
 import Image from "next/image";
+import { DarkModeContext } from "../DarkModeContext";
+import React, { useContext } from "react";
 
 function About() {
+  const { darkMode } = useContext(DarkModeContext)!;
+
   return (
     <div>
       {" "}
-      <section id="about" className="min-h-dvh bg-white">
+      <section
+        id="about"
+        className={`min-h-dvh ${darkMode ? "bg-gray-700 " : "bg-white"}`}
+      >
         <div className="py-20"></div>
-        <div className="text-6xl font-bold titillium flex justify-center">
+        <div
+          className={`text-6xl font-bold titillium flex justify-center ${
+            darkMode ? "text-white " : "text-black"
+          }`}
+        >
           ABOUT ME
         </div>
         <div className="mt-10 flex justify-center">
-          <h1 className="text-justify lg:px-40 px-10 text-light roboto font-bold text-gray-700 lg:w-1/2 ">
+          <h1
+            className={`text-justify lg:px-40 px-10 text-light roboto font-bold text-gray-700 xl:w-1/2 ${
+              darkMode ? "text-gray-200 " : "text-gray-700"
+            }`}
+          >
             Hey there, I&apos;m John Paul B. Pabelico, your next web sensation!
             From the vibrant streets of Parañaque City, Philippines, I bring a
             burst of creativity and expertise to the digital realm. With a
@@ -42,7 +57,11 @@ function About() {
           </h1>
         </div>
         <div className="py-20 lg:py-20 px-10 justify-center flex">
-          <span className="text-center lg:text-start lg:flex items-center text-2xl titillium font-bold text-gray-500">
+          <span
+            className={`text-center lg:text-start lg:flex items-center text-2xl titillium font-bold ${
+              darkMode ? "text-gray-200 " : "text-gray-500"
+            }`}
+          >
             Tech Stack: &nbsp;{" "}
             <ul className="lg:flex lg:items-center lg:mt-0 mt-5 grid grid-cols-4 gap-4">
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">

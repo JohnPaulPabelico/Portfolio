@@ -2,11 +2,19 @@ import Image from "next/image";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
-
+import React, { useContext } from "react";
+import { DarkModeContext } from "../DarkModeContext";
 function Hero() {
+  const { darkMode } = useContext(DarkModeContext)!;
+
   return (
     <div className="">
-      <section id="home" className="bg-gray-100 min-h-dvh">
+      <section
+        id="home"
+        className={`min-h-dvh ${
+          darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
+        }`}
+      >
         <div className="mt-8 lg:mt-0 lg:flex items-center justify-center lg:justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:px-10 py-5 w-3/4">
           <div className="relative mr-8 flex justify-center">
             <Image
@@ -29,11 +37,19 @@ function Hero() {
                 className="ml-3 hidden lg:block "
               />
             </div>
-            <h2 className="lg:text-start text-center mt-1 tracking-widest text-2xl font-bold titillium text-gray-700">
+            <h2
+              className={`lg:text-start text-center mt-1 tracking-widest text-2xl font-bold titillium ${
+                darkMode ? " text-gray-300" : " text-gray-700"
+              }`}
+            >
               Web Developer
             </h2>
-            <div className="max-w-lg ">
-              <h1 className="lg:text-start text-center mt-3 text-light roboto text-gray-700">
+            <div className="lg:max-w-lg ">
+              <h1
+                className={`lg:text-start text-center mt-3 text-light roboto ${
+                  darkMode ? " text-gray-300" : " text-gray-700"
+                }`}
+              >
                 Hey there, I&apos;m John Paul Pabelico, your go-to guru for all
                 things Front-end and React! Hailing from the lively streets of
                 the Philippines, I bring not just expertise, but a genuine
