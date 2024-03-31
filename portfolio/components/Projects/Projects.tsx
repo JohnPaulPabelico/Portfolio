@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import React, { useContext } from "react";
 import { DarkModeContext } from "../DarkModeContext";
@@ -251,7 +250,7 @@ function Projects() {
             </div>
           </div>
           <div
-            className={`mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 bg-white shadow-lg rounded-3xl ${
+            className={`mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow-lg rounded-3xl ${
               darkMode ? "bg-gray-700 " : "bg-white"
             }`}
           >

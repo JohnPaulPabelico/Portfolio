@@ -22,7 +22,7 @@ function About() {
         </div>
         <div className="mt-10 flex justify-center">
           <h1
-            className={`text-justify lg:px-40 px-10 text-light roboto font-bold text-gray-700 xl:w-1/2 ${
+            className={`text-justify lg:px-40 px-10 text-light roboto font-bold  xl:w-1/2 ${
               darkMode ? "text-gray-200 " : "text-gray-700"
             }`}
           >
