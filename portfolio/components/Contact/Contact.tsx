@@ -1,6 +1,7 @@
 import { FaViber } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiDiscordLine } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa";
 function Contact() {
   return (
     <div>
@@ -15,7 +16,7 @@ function Contact() {
             AND LET&apos;S GET TO WORK
           </h2>
         </div>
-        <div className="mt-10 grid lg:grid-cols-3 grid-cols-1 gap-4 justify-items-center">
+        <div className="mt-10 grid lg:grid-cols-4 grid-cols-1 gap-4 justify-items-center">
           <div>
             {" "}
             <div className="flex justify-center items-center py-2 px-4 titillium font-bold text-2xl">
@@ -40,6 +41,20 @@ function Contact() {
               {" "}
               <span className="flex justify-center px-4 titillium font-bold text-xl text-black text-opacity-60">
                 pabelicojohnpaul@gmail.com
+              </span>
+            </div>
+          </div>
+
+          <div>
+            {" "}
+            <div className="flex justify-center items-center py-2 px-4 titillium font-bold text-2xl">
+              <FaLinkedin />
+              <span className="ml-2 ">LinkedIn</span>
+            </div>
+            <div>
+              {" "}
+              <span className="lg:mb-0 mb-10 flex justify-center px-4 titillium font-bold text-xl text-black text-opacity-60">
+                linkedin.com/in/jp-pabelico/
               </span>
             </div>
           </div>

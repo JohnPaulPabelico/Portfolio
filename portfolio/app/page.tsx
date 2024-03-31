@@ -39,7 +39,7 @@ export default function Home() {
             <IoLogoGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/john-paul-p-4640a6125/"
+            href="linkedin.com/in/jp-pabelico/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition duration-300 lg:ml-5 ml-3"
