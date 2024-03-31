@@ -53,7 +53,7 @@ function Contact() {
             </div>
             <div>
               {" "}
-              <span className="lg:mb-0 mb-10 flex justify-center px-4 titillium font-bold text-xl text-black text-opacity-60">
+              <span className=" flex justify-center px-4 titillium font-bold text-xl text-black text-opacity-60">
                 linkedin.com/in/jp-pabelico/
               </span>
             </div>
