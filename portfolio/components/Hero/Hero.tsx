@@ -5,10 +5,10 @@ import { IoIosContact } from "react-icons/io";
 
 function Hero() {
   return (
-    <div>
+    <div className="">
       <section id="home" className="bg-gray-100 min-h-dvh">
         <div className="lg:flex items-center justify-center lg:justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:px-10 py-5 w-3/4">
-          <div className="mr-8 flex justify-center">
+          <div className="relative mr-8 flex justify-center">
             <Image
               src="/Jp.jpg"
               alt="Profile Pic"
