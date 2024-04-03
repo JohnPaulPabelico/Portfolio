@@ -16,7 +16,7 @@ function Projects() {
           PROJECTS
         </div>
 
-        <div className="mt-10 grid lg:grid-cols-3 grid-cols-1 gap-1 justify-items-center">
+        <div className="mt-10 py-10 grid lg:grid-cols-3 grid-cols-1 gap-3 justify-items-center">
           <div
             className={`lg:ml-10 mx-10 my-5 lg:my-0 lg:mx-0 shadow-lg rounded-3xl ${
               darkMode ? "bg-gray-700 text-white" : "bg-white"

@@ -1,6 +1,4 @@
 "use client";
-import { IoLogoGithub } from "react-icons/io";
-import { FaLinkedin } from "react-icons/fa";
 import React from "react";
 import NavBar from "../components/NavBar/NavBar";
 import Hero from "../components/Hero/Hero";
