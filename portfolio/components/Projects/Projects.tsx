@@ -152,8 +152,10 @@ function Projects() {
                 className="rounded-2xl shadow-sm"
               />
               <div className="mt-5 text-center text-3xl font-bold titillium">
-                Ebak Coin Minting Site
+                Ebak Coin Minting Site (
+                <span style={{ color: "red" }}>REMAKING</span>)
               </div>
+
               <div
                 className="mb-5 mt-5 text-justify text-md roboto"
                 style={{ maxWidth: "500px" }}
