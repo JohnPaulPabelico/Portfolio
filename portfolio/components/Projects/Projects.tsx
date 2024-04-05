@@ -19,7 +19,7 @@ function Projects() {
 
         <div className="mt-10 py-10 grid lg:grid-cols-3 grid-cols-1 gap-3 justify-items-center">
           <div
-            className={`lg:ml-10 mx-10 my-5 lg:my-0 lg:mx-0 shadow-lg rounded-3xl ${
+            className={`hover:-translate-y-5 transition duration-300 ease-in-out lg:ml-10 mx-10 my-5 lg:my-0 lg:mx-0 shadow-lg rounded-3xl ${
               darkMode ? "bg-gray-700 text-white" : "bg-white"
             }`}
           >
@@ -139,7 +139,7 @@ function Projects() {
             </div>
           </div>
           <div
-            className={`mx-10 my-5 lg:my-0 lg:mx-0 shadow-lg rounded-3xl ${
+            className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 my-5 lg:my-0 lg:mx-0 shadow-lg rounded-3xl ${
               darkMode ? "bg-gray-700 text-white" : "bg-white"
             }`}
           >
@@ -253,7 +253,7 @@ function Projects() {
             </div>
           </div>
           <div
-            className={`mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow-lg rounded-3xl ${
+            className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow-lg rounded-3xl ${
               darkMode ? "bg-gray-700 " : "bg-white"
             }`}
           >
