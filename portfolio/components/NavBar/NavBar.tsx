@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { BsFillSunFill } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
@@ -55,7 +56,7 @@ const NavBar: React.FC = () => {
           className={`flex-col lg:flex-row flex items-center gap-16 lg:gap-0 `}
         >
           <li className={`${barState ? "block" : "hidden lg:block"}`}>
-            <a
+            <Link
               className={`lg:ml-8 lg:text-xl text-3xl  titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200 ${
                 darkMode ? "text-white " : "text-black"
               }`}
@@ -66,10 +67,10 @@ const NavBar: React.FC = () => {
               }}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li className={`${barState ? "block" : "hidden lg:block"}`}>
-            <a
+            <Link
               className={` lg:text-xl text-3xl  titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200 ${
                 darkMode ? "text-white " : "text-black"
               }`}
@@ -80,10 +81,10 @@ const NavBar: React.FC = () => {
               }}
             >
               About
-            </a>
+            </Link>
           </li>
           <li className={`${barState ? "block" : "hidden lg:block"}`}>
-            <a
+            <Link
               className={` lg:text-xl text-3xl  titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200 ${
                 darkMode ? "text-white " : "text-black"
               }`}
@@ -94,10 +95,10 @@ const NavBar: React.FC = () => {
               }}
             >
               Projects
-            </a>
+            </Link>
           </li>
           <li className={`${barState ? "block" : "hidden lg:block"}`}>
-            <a
+            <Link
               className={` lg:text-xl text-3xl  titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200 ${
                 darkMode ? "text-white " : "text-black"
               }`}
@@ -108,7 +109,7 @@ const NavBar: React.FC = () => {
               }}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

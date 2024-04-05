@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
@@ -57,28 +58,28 @@ function Hero() {
               </h1>
             </div>
             <span className="flex justify-center lg:justify-start text-4xl mt-8">
-              <a
+              <Link
                 href="https://github.com/JohnPaulPabelico"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-500 transition duration-300"
               >
                 <IoLogoGithub />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/in/jp-pabelico/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-500 transition duration-300 lg:ml-5 ml-3"
               >
                 <FaLinkedin />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#contact"
                 className="hover:text-blue-500 transition duration-300 lg:ml-5 ml-3"
               >
                 <IoIosContact />
-              </a>
+              </Link>
             </span>
           </div>
         </div>

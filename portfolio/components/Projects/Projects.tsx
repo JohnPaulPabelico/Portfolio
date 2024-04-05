@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useContext } from "react";
 import { DarkModeContext } from "../DarkModeContext";
 function Projects() {
@@ -115,24 +116,24 @@ function Projects() {
               <div className="flex justify-center">
                 {" "}
                 <div className="mt-10">
-                  <a
+                  <Link
                     className="mr-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
                     href="https://blokc-frontend-challenge-navy.vercel.app/"
                     target="_blank"
                     rel="noreferrer noopenner"
                   >
                     Demo
-                  </a>
+                  </Link>
                 </div>
                 <div className="mt-10">
-                  <a
+                  <Link
                     className="ml-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
                     href="https://github.com/JohnPaulPabelico/BLOKC-Frontend-Challenge"
                     target="_blank"
                     rel="noreferrer noopenner"
                   >
                     Source
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -229,24 +230,24 @@ function Projects() {
               <div className="flex justify-center">
                 {" "}
                 <div className="mt-10">
-                  <a
+                  <Link
                     className="mr-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
                     href="https://ebak-coin.vercel.app/"
                     target="_blank"
                     rel="noreferrer noopenner"
                   >
                     Demo
-                  </a>
+                  </Link>
                 </div>
                 <div className="mt-10">
-                  <a
+                  <Link
                     className="ml-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
                     href="https://github.com/JohnPaulPabelico/Ebak-Coin"
                     target="_blank"
                     rel="noreferrer noopenner"
                   >
                     Source
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
