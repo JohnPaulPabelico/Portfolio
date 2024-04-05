@@ -5,6 +5,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
 import React, { useContext } from "react";
 import { DarkModeContext } from "../DarkModeContext";
+import "./Hero.css";
+
 function Hero() {
   const { darkMode } = useContext(DarkModeContext)!;
 
@@ -18,13 +20,15 @@ function Hero() {
       >
         <div className="mt-8 lg:mt-0 lg:flex items-center justify-center lg:justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:px-10 py-5 w-3/4">
           <div className="relative mr-8 flex justify-center">
-            <Image
+            {/* ---------- IMAGE ---------- */}
+            <div className="heroblob"></div>
+            {/* <Image
               src="/Jp.jpg"
               alt="Profile Pic"
               width={400}
               height={400}
               className="rounded-full ml-3 mb-5 lg:mb-0 lg:mt-3 lg:ml-0"
-            />
+            /> */}
           </div>
 
           <div>
