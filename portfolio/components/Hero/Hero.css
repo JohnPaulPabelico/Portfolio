@@ -1,33 +1,33 @@
 .heroblob {
-  margin-left: 0.75rem; /* equivalent to ml-3 */
-  margin-bottom: 1.25rem; /* equivalent to mb-5 */
+  margin-left: 0.75rem;
+  margin-bottom: 1.25rem;
   background: url("../../public/Jp.jpg") no-repeat;
   background-size: 100% 100%;
   width: 400px;
   height: 400px;
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
-  animation: animate 12s ease-in-out infinite;
+  animation: animate 4s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
 
 @keyframes animate {
   0% {
-    border-radius: 50% 20% 60% 30%/30% 50% 20% 60%;
+    border-radius: 60% 50% 90% 40%/70% 50% 60% 40%;
   }
   20% {
-    border-radius: 40% 60% 70% 30%/70% 50% 60% 40%;
+    border-radius: 40% 60% 80% 50%/70% 50% 60% 40%;
   }
   40% {
-    border-radius: 30% 50% 70% 40%/60% 40% 50% 60%;
+    border-radius: 35% 70% 50% 80%/70% 50% 60% 40%;
   }
   60% {
-    border-radius: 40% 60% 50% 30%/50% 60% 70% 40%;
+    border-radius: 40% 60% 70% 30%/70% 50% 60% 40%;
   }
   80% {
-    border-radius: 50% 30% 60% 40%/60% 50% 70% 40%;
+    border-radius: 60% 40% 90% 50%/70% 50% 60% 40%;
   }
   100% {
-    border-radius: 50% 20% 60% 30%/30% 50% 20% 60%;
+    border-radius: 60% 50% 90% 40%/70% 50% 60% 40%;
   }
 }
 
@@ -42,7 +42,5 @@
 @media (max-width: 767px) {
   .heroblob {
     height: 265px; /* Adjusted height for smaller screens */
-
-    margin-right: auto; /* Align horizontally center */
   }
 }
