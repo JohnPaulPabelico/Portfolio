@@ -6,7 +6,7 @@
   width: 400px;
   height: 400px;
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
-  animation: animate 4s ease-in-out infinite;
+  animation: animate 6s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
 
