@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Titillium_Web } from "next/font/google";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const roboto_init = Roboto({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto_init.variable} ${titilliumWeb_init.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
