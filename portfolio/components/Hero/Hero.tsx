@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IoLogoGithub } from "react-icons/io";
+import { IoLogoGithub, IoIosContact } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
-import { IoIosContact } from "react-icons/io";
 import React, { useContext } from "react";
 import { DarkModeContext } from "../DarkModeContext";
 import "./Hero.css";

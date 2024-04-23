@@ -1,11 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState, useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import { BsFillSunFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
-import React, { useContext } from "react";
 import { DarkModeContext } from "../DarkModeContext";
 
 const NavBar: React.FC = () => {

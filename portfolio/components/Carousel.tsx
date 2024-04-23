@@ -2,9 +2,9 @@ import React, { ReactElement, useEffect, useState, useCallback } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 interface CarouselProps {
-  children: ReactElement[];
-  autoSlide?: boolean;
-  autoSlideInterval?: number;
+  readonly children: ReactElement[];
+  readonly autoSlide?: boolean;
+  readonly autoSlideInterval?: number;
 }
 
 export default function Carousel({

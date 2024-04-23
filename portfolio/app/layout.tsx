@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Titillium_Web } from "next/font/google";
-import { Roboto } from "next/font/google";
+import { Inter, Titillium_Web, Roboto } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 

@@ -1,7 +1,6 @@
-import { FaViber } from "react-icons/fa";
+import { FaViber, FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiDiscordLine } from "react-icons/ri";
-import { FaLinkedin } from "react-icons/fa";
 import React, { useContext } from "react";
 import { DarkModeContext } from "../DarkModeContext";
 function Contact() {
@@ -60,6 +59,12 @@ function Contact() {
               {" "}
               <span
                 onClick={() => copyToClipboard("+63 9959 279 891")}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    copyToClipboard("+63 9959 279 891");
+                  }
+                }}
+                tabIndex={0}
                 className={`flex justify-center px-4 titillium font-bold text-xl text-black text-opacity-70 hover:text-blue-500 transition ease-in cursor-pointer ${
                   darkMode ? "text-white " : "text-black"
                 }`}
@@ -135,6 +140,12 @@ function Contact() {
               {" "}
               <span
                 onClick={() => copyToClipboard("sen.gg")}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    copyToClipboard("sen.gg");
+                  }
+                }}
+                tabIndex={0}
                 className={`lg:mb-0 mb-10 flex justify-center px-4 titillium font-bold text-xl text-black text-opacity-70 hover:text-blue-500 transition ease-in cursor-pointer ${
                   darkMode ? "text-white " : "text-black"
                 }`}

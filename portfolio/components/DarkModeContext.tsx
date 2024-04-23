@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useMemo } from "react";
 
 interface DarkModeContextValue {
   darkMode: boolean;
@@ -14,10 +14,12 @@ export const DarkModeProvider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   const [darkMode, setDarkMode] = useState(false);
 
-  const value = {
-    darkMode,
-    setDarkMode,
-  };
+  const value = useMemo(() => {
+    return {
+      darkMode,
+      setDarkMode,
+    };
+  }, [darkMode, setDarkMode]);
 
   return (
     <DarkModeContext.Provider value={value}>

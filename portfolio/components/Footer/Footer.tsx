@@ -1,12 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
-import React, { useContext } from "react";
-import { DarkModeContext } from "../DarkModeContext";
 function Footer() {
-  const { darkMode } = useContext(DarkModeContext)!;
-
   return (
     <div>
       {" "}
