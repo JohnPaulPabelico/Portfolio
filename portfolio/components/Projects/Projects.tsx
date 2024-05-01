@@ -4,21 +4,21 @@ import React, { useContext } from "react";
 import Carousel from "../Carousel";
 import { DarkModeContext } from "../DarkModeContext";
 
-const project1slides = ["/projects/project1/1.png", "/projects/project1/2.png"];
+const project1slides = ["/projects/Project1/1.png", "/projects/Project1/2.png"];
 
 const project2slides = [
-  "/projects/project2/1.png",
-  "/projects/project2/2.png",
-  "/projects/project2/3.png",
-  "/projects/project2/4.png",
+  "/projects/Project2/1.png",
+  "/projects/Project2/2.png",
+  "/projects/Project2/3.png",
+  "/projects/Project2/4.png",
 ];
 
 const project3slides = [
-  "/projects/project3/1.png",
-  "/projects/project3/2.png",
-  "/projects/project3/3.png",
-  "/projects/project3/4.png",
-  "/projects/project3/5.png",
+  "/projects/Project3/1.png",
+  "/projects/Project3/2.png",
+  "/projects/Project3/3.png",
+  "/projects/Project3/4.png",
+  "/projects/Project3/5.png",
 ];
 
 function Projects() {
