@@ -16,7 +16,7 @@ const NavBar: React.FC = () => {
 
   return (
     <div
-      className={`flex items-center lg:fixed fixed top-0 w-full shadow px-5 min-h-30 justify-between z-10 ${
+      className={`flex items-center lg:fixed fixed top-0 w-full shadow px-5 min-h-30 justify-between z-10 transition ${
         darkMode ? "bg-gray-700 " : "bg-white"
       }`}
     >

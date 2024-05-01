@@ -20,7 +20,7 @@ function Contact() {
     <div>
       <section
         id="contact"
-        className={`lg:min-h-80 min-h-96 ${
+        className={`lg:min-h-80 min-h-96 transition ${
           darkMode ? "bg-gray-700 " : "bg-white"
         }`}
       >

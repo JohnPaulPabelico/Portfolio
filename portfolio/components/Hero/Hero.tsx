@@ -13,7 +13,7 @@ function Hero() {
     <div className="">
       <section
         id="home"
-        className={`min-h-dvh ${
+        className={`min-h-dvh transition ${
           darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
         }`}
       >

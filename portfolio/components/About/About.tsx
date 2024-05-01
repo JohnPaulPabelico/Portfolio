@@ -10,7 +10,9 @@ function About() {
       {" "}
       <section
         id="about"
-        className={`min-h-dvh ${darkMode ? "bg-gray-700 " : "bg-white"}`}
+        className={`transition min-h-dvh ${
+          darkMode ? "bg-gray-700 " : "bg-white"
+        }`}
       >
         <div className="py-20"></div>
         <div

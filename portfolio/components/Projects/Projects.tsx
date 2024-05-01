@@ -27,7 +27,7 @@ function Projects() {
     <div>
       <section
         id="projects"
-        className={`min-h-dvh ${
+        className={`min-h-dvh transition ${
           darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
         }`}
       >

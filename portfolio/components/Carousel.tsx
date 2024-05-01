@@ -37,20 +37,36 @@ export default function Carousel({
         {slides}
       </div>
       <div className=" absolute inset-0 flex items-center justify-between p-4">
-        <button className="group p-1 rounded-full shadow-lg bg-white/80 hover:bg-white/100 transition">
-          <FaChevronLeft
-            className="group-hover:text-blue-400 transition text-black/50"
-            size={25}
-            onClick={prev}
-          />
-        </button>
-        <button className="group p-1 rounded-full shadow-lg bg-white/80 hover:bg-white/100 transition">
-          <FaChevronRight
-            className="group-hover:text-blue-400 transition text-black/50"
-            size={25}
-            onClick={next}
-          />
-        </button>
+        {slides.length > 1 && (
+          <>
+            <button
+              className={`group p-1 rounded-full shadow-lg bg-white/80 hover:bg-white/100 transition ${
+                curr === 0 ? "invisible" : ""
+              }`}
+              onClick={prev}
+              // style={{ display: curr === 0 ? "none" : "block" }}
+            >
+              <FaChevronLeft
+                className="group-hover:text-blue-400 transition text-black/50"
+                size={25}
+              />
+            </button>
+            <button
+              className={`group p-1 rounded-full shadow-lg bg-white/80 hover:bg-white/100 transition ${
+                curr === slides.length - 1 ? "invisible" : ""
+              }`}
+              onClick={next}
+              // style={{
+              //   display: curr === slides.length - 1 ? "hidden" : "block",
+              // }}
+            >
+              <FaChevronRight
+                className="group-hover:text-blue-400 transition text-black/50"
+                size={25}
+              />
+            </button>
+          </>
+        )}
       </div>
       <div className="absolute bottom-4 right-0 left-0">
         <div className="flex items-center justify-center gap-2">
