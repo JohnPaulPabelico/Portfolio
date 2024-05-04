@@ -53,7 +53,7 @@ const NavBar: React.FC = () => {
         <ul
           className={`flex-col lg:flex-row flex items-center gap-16 lg:gap-0 `}
         >
-          <li className={`${barState ? "block" : "hidden lg:block"}`}>
+          <li className={`${barState ? "block" : "invisible lg:visible"}`}>
             <Link
               className={`lg:ml-8 lg:text-xl text-3xl  titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200 ${
                 darkMode ? "text-white " : "text-black"
@@ -67,7 +67,7 @@ const NavBar: React.FC = () => {
               Home
             </Link>
           </li>
-          <li className={`${barState ? "block" : "hidden lg:block"}`}>
+          <li className={`${barState ? "block" : "invisible lg:visible"}`}>
             <Link
               className={` lg:text-xl text-3xl  titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200 ${
                 darkMode ? "text-white " : "text-black"
@@ -81,7 +81,7 @@ const NavBar: React.FC = () => {
               About
             </Link>
           </li>
-          <li className={`${barState ? "block" : "hidden lg:block"}`}>
+          <li className={`${barState ? "block" : "invisible lg:visible"}`}>
             <Link
               className={` lg:text-xl text-3xl  titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200 ${
                 darkMode ? "text-white " : "text-black"
@@ -95,7 +95,7 @@ const NavBar: React.FC = () => {
               Projects
             </Link>
           </li>
-          <li className={`${barState ? "block" : "hidden lg:block"}`}>
+          <li className={`${barState ? "block" : "invisible lg:visible"}`}>
             <Link
               className={` lg:text-xl text-3xl  titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200 ${
                 darkMode ? "text-white " : "text-black"
