@@ -38,6 +38,17 @@ function Projects() {
             <span>PROJECTS</span>
           </Reveal>
         </div>
+        <div className="flex justify-center">
+          <Reveal>
+            <h2
+              className={`text-lg tracking-widest font-bold titillium ${
+                darkMode ? "text-white " : "text-black"
+              }`}
+            >
+              HERE ARE SOME OF MY COOL PROJECTS
+            </h2>
+          </Reveal>
+        </div>
 
         <div className="mt-10 py-10 grid lg:grid-cols-3 grid-cols-1 gap-3 justify-items-center">
           <Reveal>

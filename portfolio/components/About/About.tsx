@@ -25,6 +25,17 @@ function About() {
             <span>ABOUT ME</span>
           </Reveal>
         </div>
+        <div className="flex justify-center">
+          <Reveal>
+            <h2
+              className={`text-lg tracking-widest font-bold titillium ${
+                darkMode ? "text-white " : "text-black"
+              }`}
+            >
+              LEARN MORE ABOUT ME
+            </h2>
+          </Reveal>
+        </div>
 
         <div className="mt-10 flex justify-center">
           <h1
