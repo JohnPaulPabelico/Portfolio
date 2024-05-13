@@ -12,7 +12,7 @@ export const DarkModeContext = createContext<DarkModeContextValue | undefined>(
 export const DarkModeProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const value = useMemo(() => {
     return {
