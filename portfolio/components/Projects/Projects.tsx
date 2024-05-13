@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useContext } from "react";
 import Carousel from "../Carousel";
 import { DarkModeContext } from "../DarkModeContext";
+import { Reveal } from "../Reveal";
 
 const project1slides = ["/projects/Project1/1.png", "/projects/Project1/2.png"];
 
@@ -33,361 +34,368 @@ function Projects() {
       >
         <div className="py-16"></div>
         <div className="text-6xl font-bold titillium flex justify-center">
-          PROJECTS
+          <Reveal>
+            <span>PROJECTS</span>
+          </Reveal>
         </div>
 
         <div className="mt-10 py-10 grid lg:grid-cols-3 grid-cols-1 gap-3 justify-items-center">
-          <div
-            className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:ml-10 shadow-lg rounded-3xl ${
-              darkMode ? "bg-gray-700 text-white" : "bg-white"
-            }`}
-          >
-            {" "}
-            <div className="p-10 ">
-              <Carousel autoSlide={false}>
-                {project1slides.map((s, index) => (
-                  <Image
-                    key={index}
-                    alt="slides"
-                    src={s}
-                    height={500}
-                    width={600}
-                  />
-                ))}
-              </Carousel>
-              <div className="mt-5 text-center text-3xl font-bold titillium">
-                NFT Fetcher
-              </div>
-              <div
-                className="mb-5 mt-5 text-justify text-md roboto"
-                style={{ maxWidth: "500px" }}
-              >
-                NFT Explorer is an innovative web application tailored
-                specifically for the Arbitrum ecosystem. Designed to fetch and
-                showcase non-fungible tokens (NFTs) associated with a designated
-                wallet address across various blockchain networks, it utilizes
-                the Moralis API to seamlessly gather data.
-              </div>
-              <span
-                className={`mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold ${
-                  darkMode ? " text-white" : "text-black"
-                }`}
-              >
-                Tech Stack: &nbsp;{" "}
-                <ul className="flex lg:items-center lg:mt-0 mt-2 gap-4">
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+          <Reveal>
+            <div
+              className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:ml-10 shadow rounded-3xl ${
+                darkMode ? "bg-gray-700 text-white" : "bg-white"
+              }`}
+            >
+              {" "}
+              <div className="p-10 ">
+                <Carousel autoSlide={false}>
+                  {project1slides.map((s, index) => (
                     <Image
-                      src="https://skillicons.dev/icons?i=html"
-                      alt="HTML Icon"
-                      width={30}
-                      height={30}
+                      key={index}
+                      alt="slides"
+                      src={s}
+                      height={500}
+                      width={600}
                     />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    <Image
-                      src="https://skillicons.dev/icons?i=css"
-                      alt="CSS Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>{" "}
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    {" "}
-                    <Image
-                      src="https://skillicons.dev/icons?i=ts"
-                      alt="TypeScript Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    <Image
-                      src="https://skillicons.dev/icons?i=next"
-                      alt="Next.js Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    <Image
-                      src="https://skillicons.dev/icons?i=expressjs"
-                      alt="Express.js Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    {" "}
-                    <Image
-                      src="https://skillicons.dev/icons?i=tailwind"
-                      alt="Tailwind Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    {" "}
-                    <Image
-                      src="https://skillicons.dev/icons?i=solidity"
-                      alt="Solidity Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                </ul>
-              </span>
-              <div className="flex justify-center">
-                {" "}
-                <div className="mt-10">
-                  <Link
-                    className="mr-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
-                    href="https://blokc-frontend-challenge-navy.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer noopenner"
-                  >
-                    Demo
-                  </Link>
+                  ))}
+                </Carousel>
+                <div className="mt-5 text-center text-3xl font-bold titillium">
+                  NFT Fetcher
                 </div>
-                <div className="mt-10">
-                  <Link
-                    className="ml-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
-                    href="https://github.com/JohnPaulPabelico/BLOKC-Frontend-Challenge"
-                    target="_blank"
-                    rel="noreferrer noopenner"
-                  >
-                    Source
-                  </Link>
+                <div
+                  className="mb-5 mt-5 text-justify text-md roboto"
+                  style={{ maxWidth: "500px" }}
+                >
+                  NFT Explorer is an innovative web application tailored
+                  specifically for the Arbitrum ecosystem. Designed to fetch and
+                  showcase non-fungible tokens (NFTs) associated with a
+                  designated wallet address across various blockchain networks,
+                  it utilizes the Moralis API to seamlessly gather data.
                 </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-5 lg:ml-5 shadow-lg rounded-3xl ${
-              darkMode ? "bg-gray-700 text-white" : "bg-white"
-            }`}
-          >
-            {" "}
-            <div className="p-10">
-              <Carousel autoSlide={false}>
-                {project2slides.map((s, index) => (
-                  <Image
-                    key={index}
-                    alt="slides"
-                    src={s}
-                    height={500}
-                    width={600}
-                  />
-                ))}
-              </Carousel>
-              <div className="mt-5 text-center text-3xl font-bold titillium">
-                Ebak Coin Minting Site
-                {/* (
-                <span style={{ color: "red" }}>REMAKING</span>) */}
-              </div>
-
-              <div
-                className="mb-5 mt-5 text-justify text-md roboto"
-                style={{ maxWidth: "500px" }}
-              >
-                The Ebak-Coin Minting Platform was developed as a project
-                requirement for the Arbitrm Developer's bootcamp certification.
-                It serves as a user-friendly solution for minting and staking an
-                ERC-20 token named Ebak-Coin, offering participants an
-                accessible pathway to cryptocurrency creation and staking within
-                the Arbitrum ecosystem.
-              </div>
-              <span
-                className={`mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold ${
-                  darkMode ? " text-white" : "text-black"
-                }`}
-              >
-                Tech Stack: &nbsp;{" "}
-                <ul className="flex lg:items-center lg:mt-0 mt-2 gap-4">
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    <Image
-                      src="https://skillicons.dev/icons?i=html"
-                      alt="HTML Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    <Image
-                      src="https://skillicons.dev/icons?i=css"
-                      alt="CSS Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>{" "}
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    {" "}
-                    <Image
-                      src="https://skillicons.dev/icons?i=ts"
-                      alt="TypeScript Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    <Image
-                      src="https://skillicons.dev/icons?i=next"
-                      alt="Next.js Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    {" "}
-                    <Image
-                      src="https://skillicons.dev/icons?i=tailwind"
-                      alt="Tailwind Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    {" "}
-                    <Image
-                      src="https://skillicons.dev/icons?i=solidity"
-                      alt="Solidity Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                </ul>
-              </span>
-              <div className="flex justify-center">
-                {" "}
-                <div className="mt-10">
-                  <Link
-                    className="mr-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
-                    href="https://ebak-coin.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer noopenner"
-                  >
-                    Demo
-                  </Link>
-                </div>
-                <div className="mt-10">
-                  <Link
-                    className="ml-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
-                    href="https://github.com/JohnPaulPabelico/Ebak-Coin"
-                    target="_blank"
-                    rel="noreferrer noopenner"
-                  >
-                    Source
-                  </Link>
+                <span
+                  className={`mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold ${
+                    darkMode ? " text-white" : "text-black"
+                  }`}
+                >
+                  Tech Stack: &nbsp;{" "}
+                  <ul className="flex lg:items-center lg:mt-0 mt-2 gap-4">
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      <Image
+                        src="https://skillicons.dev/icons?i=html"
+                        alt="HTML Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      <Image
+                        src="https://skillicons.dev/icons?i=css"
+                        alt="CSS Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>{" "}
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      {" "}
+                      <Image
+                        src="https://skillicons.dev/icons?i=ts"
+                        alt="TypeScript Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      <Image
+                        src="https://skillicons.dev/icons?i=next"
+                        alt="Next.js Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      <Image
+                        src="https://skillicons.dev/icons?i=expressjs"
+                        alt="Express.js Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      {" "}
+                      <Image
+                        src="https://skillicons.dev/icons?i=tailwind"
+                        alt="Tailwind Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      {" "}
+                      <Image
+                        src="https://skillicons.dev/icons?i=solidity"
+                        alt="Solidity Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                  </ul>
+                </span>
+                <div className="flex justify-center">
+                  {" "}
+                  <div className="mt-10">
+                    <Link
+                      className="mr-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
+                      href="https://blokc-frontend-challenge-navy.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer noopenner"
+                    >
+                      Demo
+                    </Link>
+                  </div>
+                  <div className="mt-10">
+                    <Link
+                      className="ml-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
+                      href="https://github.com/JohnPaulPabelico/BLOKC-Frontend-Challenge"
+                      target="_blank"
+                      rel="noreferrer noopenner"
+                    >
+                      Source
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow-lg rounded-3xl ${
-              darkMode ? "bg-gray-700 " : "bg-white"
-            }`}
-          >
-            {" "}
-            <div className="p-10">
-              <Carousel autoSlide={false}>
-                {project3slides.map((s, index) => (
-                  <Image
-                    key={index}
-                    alt="slides"
-                    src={s}
-                    height={500}
-                    width={507}
-                  />
-                ))}
-              </Carousel>
-              <div className="mt-5 text-center text-3xl font-bold titillium">
-                Spud Squad
-              </div>
-              <div
-                className="mb-5 mt-5 text-justify text-md roboto"
-                style={{ maxWidth: "500px" }}
-              >
-                Introducing Spud Squads, a captivating NFT project on the Solana
-                network. With 999 limited-edition NFTs featuring adorable potato
-                characters, Spud Squad Adventures invites users to join an
-                exclusive community, unlocking unique perks and exploring the
-                boundless opportunities of Web3.
-              </div>
-              <span
-                className={`mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold ${
-                  darkMode ? " text-white" : "text-black"
-                }`}
-              >
-                Tech Stack: &nbsp;{" "}
-                <ul className="flex lg:items-center lg:mt-0 mt-2 gap-4">
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+          </Reveal>
+          <Reveal>
+            <div
+              className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-5 lg:ml-5 shadow rounded-3xl ${
+                darkMode ? "bg-gray-700 text-white" : "bg-white"
+              }`}
+            >
+              {" "}
+              <div className="p-10">
+                <Carousel autoSlide={false}>
+                  {project2slides.map((s, index) => (
                     <Image
-                      src="https://skillicons.dev/icons?i=html"
-                      alt="HTML Icon"
-                      width={30}
-                      height={30}
+                      key={index}
+                      alt="slides"
+                      src={s}
+                      height={500}
+                      width={600}
                     />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    <Image
-                      src="https://skillicons.dev/icons?i=css"
-                      alt="CSS Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>{" "}
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    {" "}
-                    <Image
-                      src="https://skillicons.dev/icons?i=ts"
-                      alt="TypeScript Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    <Image
-                      src="https://skillicons.dev/icons?i=next"
-                      alt="Next.js Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                  <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                    {" "}
-                    <Image
-                      src="https://skillicons.dev/icons?i=tailwind"
-                      alt="Tailwind Icon"
-                      width={30}
-                      height={30}
-                    />
-                  </li>
-                </ul>
-              </span>
-              <div className="flex justify-center">
-                {" "}
-                <div className="mt-10">
-                  <Link
-                    className="mr-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
-                    href="https://spudsquad.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer noopenner"
-                  >
-                    Demo
-                  </Link>
+                  ))}
+                </Carousel>
+                <div className="mt-5 text-center text-3xl font-bold titillium">
+                  Ebak Coin Minting Site
+                  {/* (
+                  <span style={{ color: "red" }}>REMAKING</span>) */}
                 </div>
-                <div className="mt-10">
-                  <Link
-                    className="ml-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
-                    href="https://github.com/JohnPaulPabelico/Spud-Squad-Dapp"
-                    target="_blank"
-                    rel="noreferrer noopenner"
-                  >
-                    Source
-                  </Link>
+                <div
+                  className="mb-5 mt-5 text-justify text-md roboto"
+                  style={{ maxWidth: "500px" }}
+                >
+                  The Ebak-Coin Minting Platform was developed as a project
+                  requirement for the Arbitrm Developer's bootcamp
+                  certification. It serves as a user-friendly solution for
+                  minting and staking an ERC-20 token named Ebak-Coin, offering
+                  participants an accessible pathway to cryptocurrency creation
+                  and staking within the Arbitrum ecosystem.
+                </div>
+                <span
+                  className={`mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold ${
+                    darkMode ? " text-white" : "text-black"
+                  }`}
+                >
+                  Tech Stack: &nbsp;{" "}
+                  <ul className="flex lg:items-center lg:mt-0 mt-2 gap-4">
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      <Image
+                        src="https://skillicons.dev/icons?i=html"
+                        alt="HTML Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      <Image
+                        src="https://skillicons.dev/icons?i=css"
+                        alt="CSS Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>{" "}
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      {" "}
+                      <Image
+                        src="https://skillicons.dev/icons?i=ts"
+                        alt="TypeScript Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      <Image
+                        src="https://skillicons.dev/icons?i=next"
+                        alt="Next.js Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      {" "}
+                      <Image
+                        src="https://skillicons.dev/icons?i=tailwind"
+                        alt="Tailwind Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      {" "}
+                      <Image
+                        src="https://skillicons.dev/icons?i=solidity"
+                        alt="Solidity Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                  </ul>
+                </span>
+                <div className="flex justify-center">
+                  {" "}
+                  <div className="mt-10">
+                    <Link
+                      className="mr-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
+                      href="https://ebak-coin.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer noopenner"
+                    >
+                      Demo
+                    </Link>
+                  </div>
+                  <div className="mt-10">
+                    <Link
+                      className="ml-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
+                      href="https://github.com/JohnPaulPabelico/Ebak-Coin"
+                      target="_blank"
+                      rel="noreferrer noopenner"
+                    >
+                      Source
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
+          <Reveal>
+            <div
+              className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow rounded-3xl ${
+                darkMode ? "bg-gray-700 " : "bg-white"
+              }`}
+            >
+              {" "}
+              <div className="p-10">
+                <Carousel autoSlide={false}>
+                  {project3slides.map((s, index) => (
+                    <Image
+                      key={index}
+                      alt="slides"
+                      src={s}
+                      height={500}
+                      width={507}
+                    />
+                  ))}
+                </Carousel>
+                <div className="mt-5 text-center text-3xl font-bold titillium">
+                  Spud Squad
+                </div>
+                <div
+                  className="mb-5 mt-5 text-justify text-md roboto"
+                  style={{ maxWidth: "500px" }}
+                >
+                  Introducing Spud Squads, a captivating NFT project on the
+                  Solana network. With 999 limited-edition NFTs featuring
+                  adorable potato characters, Spud Squad Adventures invites
+                  users to join an exclusive community, unlocking unique perks
+                  and exploring the boundless opportunities of Web3.
+                </div>
+                <span
+                  className={`mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold ${
+                    darkMode ? " text-white" : "text-black"
+                  }`}
+                >
+                  Tech Stack: &nbsp;{" "}
+                  <ul className="flex lg:items-center lg:mt-0 mt-2 gap-4">
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      <Image
+                        src="https://skillicons.dev/icons?i=html"
+                        alt="HTML Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      <Image
+                        src="https://skillicons.dev/icons?i=css"
+                        alt="CSS Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>{" "}
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      {" "}
+                      <Image
+                        src="https://skillicons.dev/icons?i=ts"
+                        alt="TypeScript Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      <Image
+                        src="https://skillicons.dev/icons?i=next"
+                        alt="Next.js Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
+                      {" "}
+                      <Image
+                        src="https://skillicons.dev/icons?i=tailwind"
+                        alt="Tailwind Icon"
+                        width={30}
+                        height={30}
+                      />
+                    </li>
+                  </ul>
+                </span>
+                <div className="flex justify-center">
+                  {" "}
+                  <div className="mt-10">
+                    <Link
+                      className="mr-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
+                      href="https://spudsquad.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer noopenner"
+                    >
+                      Demo
+                    </Link>
+                  </div>
+                  <div className="mt-10">
+                    <Link
+                      className="ml-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
+                      href="https://github.com/JohnPaulPabelico/Spud-Squad-Dapp"
+                      target="_blank"
+                      rel="noreferrer noopenner"
+                    >
+                      Source
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
         </div>
         <div className="py-16"></div>
       </section>

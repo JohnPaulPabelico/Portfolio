@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
+import { Reveal } from "../Reveal";
+
 function Footer() {
   return (
     <div>
