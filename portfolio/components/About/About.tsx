@@ -28,29 +28,26 @@ function About() {
               darkMode ? "text-gray-200 " : "text-gray-700"
             }`}
           >
-            Hey there, I&apos;m John Paul B. Pabelico, your next web sensation!
-            From the vibrant streets of Parañaque City, Philippines, I bring a
-            burst of creativity and expertise to the digital realm. With a
-            Bachelor of Science degree in Computer Engineering under my belt,
-            I&apos;m not just another coder – I&apos;m your partner in
-            transforming visions into captivating online experiences.
+            Hey there! My name is John Paul Pabelico, an aspiring Full-Stack
+            Developer. I&apos;m currently residing in the vibrant streets of
+            Paranaque City, Philippines. I&apos;m also a Bachelor of Science in
+            Computer Engineering graduate from Adamson University.
             <br></br>
             <br></br>
-            My journey in the tech world has been nothing short of exhilarating.
-            From mastering the art of coding to honing my skills in web
-            development, I&apos;ve dedicated myself to staying ahead of the
-            curve. Armed with a diverse toolkit that includes languages like
-            Python, JavaScript, and Java, as well as frameworks like NextJS and
-            ExpressJS, I&apos;m equipped to tackle any challenge that comes my
-            way.
+            My journey in web development began when I was introduced to
+            blockchain development by The BLOKC, where they conducted a bootcamp
+            where they taught us how to deploy our own smart contracts in the
+            Arbitrum Network. However, prior to that, I hated web development.
+            My first plan was to get into game and application development. But
+            I never thought that I would be here now, falling in love with web
+            development and web design.
             <br></br>
             <br></br>
-            But it&apos;s not just about the code – it&apos;s about the magic
-            that happens when creativity meets technology. Whether it&apos;s
-            designing sleek interfaces that captivate audiences or crafting
-            seamless user experiences that keep them coming back for more, I
-            thrive on pushing the boundaries of what&apos;s possible in the
-            digital world.
+            The knowledge that I learned during the bootcamp helped me see a new
+            light in web development and I thought to myself that this might be
+            my calling. Now here I am! I am an aspiring Full-Stack Developer,
+            that loves to build things and make ideas turn into the real deal. I
+            learned a new passion and am excited to see where it takes me.
             <br></br>
             <br></br>
             So, if you&apos;re ready to take your online presence to the next
