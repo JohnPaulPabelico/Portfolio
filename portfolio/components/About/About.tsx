@@ -2,6 +2,7 @@ import Image from "next/image";
 import { DarkModeContext } from "../DarkModeContext";
 import React, { useContext } from "react";
 import { Reveal } from "../Reveal";
+import { SlideReveal } from "../SlideReveal";
 
 function About() {
   const { darkMode } = useContext(DarkModeContext)!;
@@ -81,137 +82,137 @@ function About() {
               darkMode ? "text-gray-200 " : "text-gray-500"
             }`}
           >
-            <Reveal>
+            <SlideReveal>
               <span>Tech Stack: &nbsp; </span>
-            </Reveal>
+            </SlideReveal>
 
             <ul className="lg:flex lg:items-center lg:mt-0 mt-5 grid grid-cols-4 gap-4">
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=html"
                     alt="HTML"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=css"
                     alt="CSS"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=js"
                     alt="JavaScript"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=ts"
                     alt="TypeScript"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=react"
                     alt="React"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=next"
                     alt="Next"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=express"
                     alt="Express"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=nodejs"
                     alt="NodeJS"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=tailwind"
                     alt="Tailwind"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=github"
                     alt="Github Icon"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=npm"
                     alt="NPM Icon"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
               <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                 {" "}
-                <Reveal>
+                <SlideReveal>
                   <Image
                     src="https://skillicons.dev/icons?i=docker"
                     alt="Docker Icon"
                     width={50}
                     height={50}
                   />
-                </Reveal>
+                </SlideReveal>
               </li>
             </ul>
           </span>

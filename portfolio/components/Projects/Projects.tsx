@@ -4,6 +4,7 @@ import React, { useContext } from "react";
 import Carousel from "../Carousel";
 import { DarkModeContext } from "../DarkModeContext";
 import { Reveal } from "../Reveal";
+import { SlideReveal } from "../SlideReveal";
 
 const project1slides = ["/projects/Project1/1.png", "/projects/Project1/2.png"];
 
@@ -51,7 +52,7 @@ function Projects() {
         </div>
 
         <div className="mt-10 py-10 grid lg:grid-cols-3 grid-cols-1 gap-3 justify-items-center">
-          <Reveal>
+          <SlideReveal>
             <div
               className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:ml-10 shadow rounded-3xl ${
                 darkMode ? "bg-gray-700 text-white" : "bg-white"
@@ -176,8 +177,8 @@ function Projects() {
                 </div>
               </div>
             </div>
-          </Reveal>
-          <Reveal>
+          </SlideReveal>
+          <SlideReveal>
             <div
               className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-5 lg:ml-5 shadow rounded-3xl ${
                 darkMode ? "bg-gray-700 text-white" : "bg-white"
@@ -297,8 +298,8 @@ function Projects() {
                 </div>
               </div>
             </div>
-          </Reveal>
-          <Reveal>
+          </SlideReveal>
+          <SlideReveal>
             <div
               className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow rounded-3xl ${
                 darkMode ? "bg-gray-700 " : "bg-white"
@@ -406,7 +407,7 @@ function Projects() {
                 </div>
               </div>
             </div>
-          </Reveal>
+          </SlideReveal>
         </div>
         <div className="py-16"></div>
       </section>
