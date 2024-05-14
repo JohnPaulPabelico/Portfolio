@@ -19,7 +19,7 @@ export const SlideReveal = ({ children, width = "fit-content" }: props) => {
   }, [isInView]);
 
   return (
-    <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+    <div ref={ref} style={{ position: "relative", width }}>
       <motion.div
         variants={{
           hidden: { opacity: 0, x: 100 },
