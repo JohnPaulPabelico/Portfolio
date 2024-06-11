@@ -94,6 +94,22 @@ const NavBar: React.FC = () => {
                 className={` lg:text-xl text-3xl  titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200 ${
                   darkMode ? "text-white " : "text-black"
                 }`}
+                href="#experience"
+                onClick={() => {
+                  setBarState(false);
+                  console.log(barState);
+                }}
+              >
+                Experience
+              </Link>
+            </FadeReveal>
+          </li>
+          <li className={`${barState ? "block" : "invisible lg:visible"}`}>
+            <FadeReveal>
+              <Link
+                className={` lg:text-xl text-3xl  titillium font-bold rounded-full m-2 hover:text-blue-500 transition duration-200 ${
+                  darkMode ? "text-white " : "text-black"
+                }`}
                 href="#projects"
                 onClick={() => {
                   setBarState(false);
