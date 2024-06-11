@@ -23,7 +23,7 @@ function Contact() {
       <section
         id="contact"
         className={`lg:min-h-80 min-h-96 transition ${
-          darkMode ? "bg-gray-700 " : "bg-white"
+          darkMode ? "bg-gray-900 " : "bg-gray-100"
         }`}
       >
         <div className="py-6"></div>

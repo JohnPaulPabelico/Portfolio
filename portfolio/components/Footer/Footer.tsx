@@ -9,7 +9,7 @@ function Footer() {
       {" "}
       <section
         id="footer"
-        className="min-h-32 bg-gray-900 flex justify-between items-center px-10"
+        className="min-h-32 bg-gray-700 flex justify-between items-center px-10"
       >
         <div className="text-2xl text-white font-bold titillium ">
           Copyright © 2024. All rights are reserved

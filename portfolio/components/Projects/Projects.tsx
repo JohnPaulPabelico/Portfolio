@@ -30,7 +30,7 @@ function Projects() {
       <section
         id="projects"
         className={`min-h-dvh transition ${
-          darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
+          darkMode ? "bg-gray-700 text-white" : "bg-white"
         }`}
       >
         <div className="py-16"></div>
@@ -55,7 +55,7 @@ function Projects() {
           <SlideReveal>
             <div
               className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:ml-10 shadow rounded-3xl ${
-                darkMode ? "bg-gray-700 text-white" : "bg-white"
+                darkMode ? "bg-gray-900 text-white" : "bg-white"
               }`}
             >
               {" "}
@@ -181,7 +181,7 @@ function Projects() {
           <SlideReveal>
             <div
               className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-5 lg:ml-5 shadow rounded-3xl ${
-                darkMode ? "bg-gray-700 text-white" : "bg-white"
+                darkMode ? "bg-gray-900 text-white" : "bg-white"
               }`}
             >
               {" "}
@@ -302,7 +302,7 @@ function Projects() {
           <SlideReveal>
             <div
               className={`hover:-translate-y-5 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow rounded-3xl ${
-                darkMode ? "bg-gray-700 " : "bg-white"
+                darkMode ? "bg-gray-900 " : "bg-white"
               }`}
             >
               {" "}
