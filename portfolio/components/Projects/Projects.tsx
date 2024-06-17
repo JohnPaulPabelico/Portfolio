@@ -61,8 +61,10 @@ function Projects() {
         <div className="mt-10 py-10 grid lg:grid-cols-3 grid-cols-1 gap-3 justify-items-center">
           <SlideReveal>
             <div
-              className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:ml-10 shadow rounded-3xl ${
-                darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
+              className={`transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:ml-10 shadow rounded-3xl ${
+                darkMode
+                  ? "bg-gray-900 text-white hover:bg-gray-950"
+                  : "bg-gray-100 hover:bg-gray-200"
               }`}
             >
               {" "}
@@ -188,7 +190,9 @@ function Projects() {
           <SlideReveal>
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-5 lg:ml-5 shadow rounded-3xl ${
-                darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
+                darkMode
+                  ? "bg-gray-900 text-white hover:bg-gray-950"
+                  : "bg-gray-100 hover:bg-gray-200"
               }`}
             >
               {" "}
@@ -309,7 +313,9 @@ function Projects() {
           <SlideReveal>
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow rounded-3xl ${
-                darkMode ? "bg-gray-900 " : "bg-gray-100"
+                darkMode
+                  ? "bg-gray-900 text-white hover:bg-gray-950"
+                  : "bg-gray-100 hover:bg-gray-200"
               }`}
             >
               {" "}
@@ -421,7 +427,9 @@ function Projects() {
           <SlideReveal>
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:ml-10 shadow rounded-3xl ${
-                darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
+                darkMode
+                  ? "bg-gray-900 text-white hover:bg-gray-950"
+                  : "bg-gray-100 hover:bg-gray-200"
               }`}
             >
               {" "}
@@ -539,7 +547,9 @@ function Projects() {
           <SlideReveal>
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-5 lg:ml-5 shadow rounded-3xl ${
-                darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
+                darkMode
+                  ? "bg-gray-900 text-white hover:bg-gray-950"
+                  : "bg-gray-100 hover:bg-gray-200"
               }`}
             >
               {" "}
@@ -670,7 +680,9 @@ function Projects() {
           <SlideReveal>
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-5 lg:ml-5 shadow rounded-3xl ${
-                darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
+                darkMode
+                  ? "bg-gray-900 text-white hover:bg-gray-950"
+                  : "bg-gray-100 hover:bg-gray-200"
               }`}
             >
               {" "}
