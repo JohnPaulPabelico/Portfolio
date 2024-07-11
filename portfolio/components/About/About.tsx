@@ -207,8 +207,8 @@ function About() {
                 {" "}
                 <SlideReveal>
                   <Image
-                    src="https://skillicons.dev/icons?i=docker"
-                    alt="Docker Icon"
+                    src="https://skillicons.dev/icons?i=angular"
+                    alt="angular icon"
                     width={50}
                     height={50}
                   />

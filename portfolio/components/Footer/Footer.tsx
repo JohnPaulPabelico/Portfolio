@@ -24,7 +24,7 @@ function Footer() {
             <IoLogoGithub />
           </Link>
           <Link
-            href="linkedin.com/in/jp-pabelico/"
+            href="https://linkedin.com/in/jp-pabelico/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition duration-300 lg:ml-5 ml-3"

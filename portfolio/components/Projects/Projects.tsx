@@ -30,6 +30,15 @@ const project4slides = [
   "/projects/Project4/4.png",
 ];
 
+const project5slides = [
+  "/projects/Project5/1.png",
+  "/projects/Project5/2.png",
+  "/projects/Project5/3.png",
+  "/projects/Project5/4.png",
+  "/projects/Project5/5.png",
+  "/projects/Project5/6.png",
+];
+
 function Projects() {
   const { darkMode } = useContext(DarkModeContext)!;
   return (
@@ -554,8 +563,8 @@ function Projects() {
             >
               {" "}
               <div className="p-10">
-                {/* <Carousel autoSlide={false}>
-                  {project2slides.map((s, index) => (
+                <Carousel autoSlide={false}>
+                  {project5slides.map((s, index) => (
                     <Image
                       key={index}
                       alt="slides"
@@ -564,32 +573,19 @@ function Projects() {
                       width={600}
                     />
                   ))}
-                </Carousel> */}
-                <Image
-                  alt="slides"
-                  src="/projects/comingsoon.jpg"
-                  height={500}
-                  width={600}
-                />
-                {/* <div className="mt-5 text-center text-3xl font-bold titillium">
-                  MORE PROJECTS TO COME
-                </div> */}
+                </Carousel>
                 <div className="mt-7 text-center text-3xl font-bold titillium flex justify-center">
-                  MORE PROJECTS TO COME
-                  {/* (
-                  <span style={{ color: "red" }}>REMAKING</span>) */}
+                  Bantay Gastos - Finance Tracker
                 </div>
-                <div className="py-32"> </div>
-                {/* <div
+                <div
                   className="mb-5 mt-5 text-justify text-md roboto"
                   style={{ maxWidth: "500px" }}
                 >
-                  The Ebak-Coin Minting Platform was developed as a project
-                  requirement for the Arbitrm Developer's bootcamp
-                  certification. It serves as a user-friendly solution for
-                  minting and staking an ERC-20 token named Ebak-Coin, offering
-                  participants an accessible pathway to cryptocurrency creation
-                  and staking within the Arbitrum ecosystem.
+                  Bantay Gastos is a finance tracker web application created in
+                  Angular to track your expenses and income. The web-app also
+                  provides charts as analysis for your financing. Furthermor, it
+                  also has an authentication functionality provided by firebase
+                  to store data in the cloud.
                 </div>
                 <span
                   className={`mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold ${
@@ -625,8 +621,8 @@ function Projects() {
                     </li>
                     <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                       <Image
-                        src="https://skillicons.dev/icons?i=next"
-                        alt="Next.js Icon"
+                        src="https://skillicons.dev/icons?i=angular"
+                        alt="Angular Icon"
                         width={30}
                         height={30}
                       />
@@ -634,17 +630,8 @@ function Projects() {
                     <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                       {" "}
                       <Image
-                        src="https://skillicons.dev/icons?i=tailwind"
-                        alt="Tailwind Icon"
-                        width={30}
-                        height={30}
-                      />
-                    </li>
-                    <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
-                      {" "}
-                      <Image
-                        src="https://skillicons.dev/icons?i=solidity"
-                        alt="Solidity Icon"
+                        src="https://skillicons.dev/icons?i=firebase"
+                        alt="firebase Icon"
                         width={30}
                         height={30}
                       />
@@ -656,7 +643,7 @@ function Projects() {
                   <div className="mt-10">
                     <Link
                       className="mr-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
-                      href="https://ebak-coin.vercel.app/"
+                      href="https://bantay-gastos.web.app/"
                       target="_blank"
                       rel="noreferrer noopenner"
                     >
@@ -666,20 +653,20 @@ function Projects() {
                   <div className="mt-10">
                     <Link
                       className="ml-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
-                      href="https://github.com/JohnPaulPabelico/Ebak-Coin"
+                      href="https://github.com/JohnPaulPabelico/Bantay-Gastos"
                       target="_blank"
                       rel="noreferrer noopenner"
                     >
                       Source
                     </Link>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </SlideReveal>
           <SlideReveal>
             <div
-              className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-5 lg:ml-5 shadow rounded-3xl ${
+              className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow rounded-3xl ${
                 darkMode
                   ? "bg-gray-900 text-white hover:bg-gray-950"
                   : "bg-gray-100 hover:bg-gray-200"
