@@ -39,6 +39,13 @@ const project5slides = [
   "/projects/Project5/6.png",
 ];
 
+const project6slides = [
+  "/projects/Project6/1.png",
+  "/projects/Project6/2.png",
+  "/projects/Project6/3.png",
+  "/projects/Project6/4.png",
+];
+
 function Projects() {
   const { darkMode } = useContext(DarkModeContext)!;
   return (
@@ -663,7 +670,7 @@ function Projects() {
                 </div>
               </div>
             </div>
-          </SlideReveal>
+          </SlideReveal>{" "}
           <SlideReveal>
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow rounded-3xl ${
@@ -674,8 +681,8 @@ function Projects() {
             >
               {" "}
               <div className="p-10">
-                {/* <Carousel autoSlide={false}>
-                  {project2slides.map((s, index) => (
+                <Carousel autoSlide={false}>
+                  {project6slides.map((s, index) => (
                     <Image
                       key={index}
                       alt="slides"
@@ -684,32 +691,19 @@ function Projects() {
                       width={600}
                     />
                   ))}
-                </Carousel> */}
-                <Image
-                  alt="slides"
-                  src="/projects/comingsoon.jpg"
-                  height={500}
-                  width={600}
-                />
-                {/* <div className="mt-5 text-center text-3xl font-bold titillium">
-                  MORE PROJECTS TO COME
-                </div> */}
+                </Carousel>
                 <div className="mt-7 text-center text-3xl font-bold titillium flex justify-center">
-                  MORE PROJECTS TO COME
-                  {/* (
-                  <span style={{ color: "red" }}>REMAKING</span>) */}
+                  Candy Blinks
                 </div>
-                <div className="py-32"> </div>
-                {/* <div
+                <div
                   className="mb-5 mt-5 text-justify text-md roboto"
                   style={{ maxWidth: "500px" }}
                 >
-                  The Ebak-Coin Minting Platform was developed as a project
-                  requirement for the Arbitrm Developer's bootcamp
-                  certification. It serves as a user-friendly solution for
-                  minting and staking an ERC-20 token named Ebak-Coin, offering
-                  participants an accessible pathway to cryptocurrency creation
-                  and staking within the Arbitrum ecosystem.
+                  CandyBlinks is a no-code platform/tool that leverages
+                  metaplex's Candy Machine and Solana Actions' powerful Blinks
+                  for seamless NFT distribution! We’re here to empower creators
+                  by eliminating unnecessary barriers, so you can focus on what
+                  really matters—your art and your community.
                 </div>
                 <span
                   className={`mt-5 text-center lg:text-start lg:flex items-center text-l titillium font-bold ${
@@ -745,8 +739,8 @@ function Projects() {
                     </li>
                     <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                       <Image
-                        src="https://skillicons.dev/icons?i=next"
-                        alt="Next.js Icon"
+                        src="https://skillicons.dev/icons?i=nextjs"
+                        alt="NextJS Icon"
                         width={30}
                         height={30}
                       />
@@ -754,17 +748,17 @@ function Projects() {
                     <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                       {" "}
                       <Image
-                        src="https://skillicons.dev/icons?i=tailwind"
-                        alt="Tailwind Icon"
+                        src="https://skillicons.dev/icons?i=supabase"
+                        alt="Supabase Icon"
                         width={30}
                         height={30}
                       />
-                    </li>
+                    </li>{" "}
                     <li className="m-1 hover:-translate-y-2 transition duration-300 ease-in-out">
                       {" "}
                       <Image
-                        src="https://skillicons.dev/icons?i=solidity"
-                        alt="Solidity Icon"
+                        src="https://skillicons.dev/icons?i=solana"
+                        alt="Supabase Icon"
                         width={30}
                         height={30}
                       />
@@ -776,7 +770,7 @@ function Projects() {
                   <div className="mt-10">
                     <Link
                       className="mr-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
-                      href="https://ebak-coin.vercel.app/"
+                      href="https://candyblinks.fun/"
                       target="_blank"
                       rel="noreferrer noopenner"
                     >
@@ -786,14 +780,14 @@ function Projects() {
                   <div className="mt-10">
                     <Link
                       className="ml-5 bg-blue-400 text-white titillium font-bold text-xl px-5 py-3 rounded-3xl hover:bg-blue-700 transition duration-200 ease-in-out"
-                      href="https://github.com/JohnPaulPabelico/Ebak-Coin"
+                      href="https://github.com/JohnPaulPabelico/Candy-Blinks"
                       target="_blank"
                       rel="noreferrer noopenner"
                     >
                       Source
                     </Link>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </SlideReveal>
