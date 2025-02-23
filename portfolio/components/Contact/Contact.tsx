@@ -148,10 +148,10 @@ function Contact() {
               </div>
               <div>
                 <span
-                  onClick={() => copyToClipboard("sen.gg")}
+                  onClick={() => copyToClipboard("sen.dev")}
                   onKeyDown={(e) => {
                     if (e.key === "Enter") {
-                      copyToClipboard("sen.gg");
+                      copyToClipboard("sen.dev");
                     }
                   }}
                   tabIndex={0}
@@ -159,7 +159,7 @@ function Contact() {
                     darkMode ? "text-white " : "text-black"
                   }`}
                 >
-                  sen.gg
+                  sen.dev
                 </span>
               </div>
             </div>

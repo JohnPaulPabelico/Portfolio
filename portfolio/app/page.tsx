@@ -8,6 +8,8 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import Experience from "../components/Experience/Experience";
 import { DarkModeProvider } from "../components/DarkModeContext";
+import Hackathons from "@/components/Hackathons/Hackathons";
+import Engagements from "@/components/Engagements/Engagements";
 
 export default function Home() {
   return (
@@ -17,7 +19,9 @@ export default function Home() {
         <Hero />
         <About />
         <Experience />
+        <Hackathons />
         <Projects />
+        <Engagements />
         <Contact />
         <Footer />
       </main>

@@ -53,7 +53,7 @@ function Projects() {
       <section
         id="projects"
         className={`min-h-dvh transition ${
-          darkMode ? "bg-gray-700 text-white" : "bg-white"
+          darkMode ? "bg-gray-900 text-white" : "bg-gray-100"
         }`}
       >
         <div className="py-16"></div>
@@ -79,8 +79,8 @@ function Projects() {
             <div
               className={`transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:ml-10 shadow rounded-3xl ${
                 darkMode
-                  ? "bg-gray-900 text-white hover:bg-gray-950"
-                  : "bg-gray-100 hover:bg-gray-200"
+                  ? "bg-gray-700 text-white hover:bg-gray-950"
+                  : "bg-white hover:bg-gray-200"
               }`}
             >
               {" "}
@@ -207,8 +207,8 @@ function Projects() {
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-5 lg:ml-5 shadow rounded-3xl ${
                 darkMode
-                  ? "bg-gray-900 text-white hover:bg-gray-950"
-                  : "bg-gray-100 hover:bg-gray-200"
+                  ? "bg-gray-700 text-white hover:bg-gray-950"
+                  : "bg-white hover:bg-gray-200"
               }`}
             >
               {" "}
@@ -330,8 +330,8 @@ function Projects() {
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow rounded-3xl ${
                 darkMode
-                  ? "bg-gray-900 text-white hover:bg-gray-950"
-                  : "bg-gray-100 hover:bg-gray-200"
+                  ? "bg-gray-700 text-white hover:bg-gray-950"
+                  : "bg-white hover:bg-gray-200"
               }`}
             >
               {" "}
@@ -444,8 +444,8 @@ function Projects() {
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:ml-10 shadow rounded-3xl ${
                 darkMode
-                  ? "bg-gray-900 text-white hover:bg-gray-950"
-                  : "bg-gray-100 hover:bg-gray-200"
+                  ? "bg-gray-700 text-white hover:bg-gray-950"
+                  : "bg-white hover:bg-gray-200"
               }`}
             >
               {" "}
@@ -564,8 +564,8 @@ function Projects() {
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-5 lg:ml-5 shadow rounded-3xl ${
                 darkMode
-                  ? "bg-gray-900 text-white hover:bg-gray-950"
-                  : "bg-gray-100 hover:bg-gray-200"
+                  ? "bg-gray-700 text-white hover:bg-gray-950"
+                  : "bg-white hover:bg-gray-200"
               }`}
             >
               {" "}
@@ -675,8 +675,8 @@ function Projects() {
             <div
               className={`hover:bg-gray-200 transition duration-300 ease-in-out mx-10 mt-5 mb-10 lg:my-0 lg:mx-0 lg:mr-10 shadow rounded-3xl ${
                 darkMode
-                  ? "bg-gray-900 text-white hover:bg-gray-950"
-                  : "bg-gray-100 hover:bg-gray-200"
+                  ? "bg-gray-700 text-white hover:bg-gray-950"
+                  : "bg-white hover:bg-gray-200"
               }`}
             >
               {" "}
